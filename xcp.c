@@ -503,7 +503,7 @@ blt_int32u XcpGetOrderedLong(blt_int8u const * data)
 {
   blt_int32u result = 0;
 
-#if (BOOT_CPU_BYTE_ORDER_MOTOROLA	== 0)
+#if (BOOT_CPU_BYTE_ORDER_MOTOROLA == 0)
   result |= (blt_int32u)data[0];
   result |= (blt_int32u)((blt_int32u)data[1] << 8);
   result |= (blt_int32u)((blt_int32u)data[2] << 16);
@@ -528,7 +528,7 @@ blt_int32u XcpGetOrderedLong(blt_int8u const * data)
 ****************************************************************************************/
 void XcpSetOrderedLong(blt_int32u value, blt_int8u *data)
 {
-#if (BOOT_CPU_BYTE_ORDER_MOTOROLA	== 0)
+#if (BOOT_CPU_BYTE_ORDER_MOTOROLA == 0)
   data[0] = (blt_int8u) value;
   data[1] = (blt_int8u)(value >>  8);
   data[2] = (blt_int8u)(value >> 16);

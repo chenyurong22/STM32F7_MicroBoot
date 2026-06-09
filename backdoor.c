@@ -1,5 +1,5 @@
 /************************************************************************************//**
-* \file         Source/backdoor.c
+* \file         backdoor.c
 * \brief        Bootloader backdoor entry source file.
 * \ingroup      Core
 * \internal
@@ -168,7 +168,7 @@ void BackDoorSetExtension(blt_int32u extension_ms)
 ****************************************************************************************/
 blt_int32u BackDoorGetExtension(void)
 {
-  /* read out and reutrn the currently configured extension time */
+  /* read out and return the currently configured extension time */
   return backdoorExtensionTime;
 } /*** end of BackDoorGetExtension ***/
 

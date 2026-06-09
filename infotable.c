@@ -1,5 +1,5 @@
 /************************************************************************************//**
-* \file         Source/infotable.v
+* \file         infotable.c
 * \brief        Info table check feature source file.
 * \ingroup      Core
 * \internal
